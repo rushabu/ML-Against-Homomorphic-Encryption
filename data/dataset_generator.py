@@ -144,7 +144,6 @@ class DatasetGenerator:
             "amplitude": float(np.mean(np.abs(vector))),
             "variability": float(np.std(vector)),
             "sparsity": float(np.mean(np.isclose(vector, 0.0, atol=0.15))),
-            "operation_bias": self._operation_bias(label),
         }
 
     def _pair_workload_profile(
@@ -158,12 +157,3 @@ class DatasetGenerator:
         profile["amplitude"] = float((np.mean(np.abs(left)) + np.mean(np.abs(right))) / 2.0)
         return profile
 
-    def _operation_bias(self, label: str) -> float:
-        biases = {
-            "mean": 1.0,
-            "variance": 1.02,
-            "dot_product": 1.01,
-            "linear_regression_inference": 1.03,
-            "logistic_regression_approx": 1.05,
-        }
-        return biases[label]

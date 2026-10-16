@@ -1,0 +1,6 @@
+pad_depth=False seed=0: 1000 traces in 80s, max |error| = 2.20e-03
+pad_depth=False seed=1: 1000 traces in 84s, max |error| = 2.80e-03
+pad_depth=False seed=2: 1000 traces in 89s, max |error| = 3.01e-03
+pad_depth=False seed=3: 1000 traces in 34s, max |error| = 3.38e-03
+pad_depth=False seed=4: 1000 traces in 57s, max |error| = 3.58e-03
+Saved experiments\results\traces_fixed_n.csv

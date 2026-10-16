@@ -1,0 +1,11 @@
+pad_depth=False seed=0: 1000 traces in 130s, max |error| = 7.27e-03
+pad_depth=False seed=1: 1000 traces in 92s, max |error| = 9.48e-03
+pad_depth=False seed=2: 1000 traces in 156s, max |error| = 1.03e-02
+pad_depth=False seed=3: 1000 traces in 151s, max |error| = 1.68e-02
+pad_depth=False seed=4: 1000 traces in 198s, max |error| = 5.12e-03
+pad_depth=True seed=0: 1000 traces in 206s, max |error| = 2.30e-02
+pad_depth=True seed=1: 1000 traces in 206s, max |error| = 3.59e-02
+pad_depth=True seed=2: 1000 traces in 203s, max |error| = 3.45e-02
+pad_depth=True seed=3: 1000 traces in 156s, max |error| = 3.67e-02
+pad_depth=True seed=4: 1000 traces in 200s, max |error| = 3.90e-02
+Saved experiments\results\traces.csv

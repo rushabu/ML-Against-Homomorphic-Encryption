@@ -1,0 +1,618 @@
+{
+  "n_traces": {
+    "undefended": 5000,
+    "depth_padded": 5000,
+    "fixed_n": 5000
+  },
+  "max_abs_error": {
+    "undefended": 0.0167716616911803,
+    "depth_padded": 0.038953107901527,
+    "fixed_n": 0.0035820511330157
+  },
+  "confusion_rf_remote_variable_n": [
+    [
+      448,
+      0,
+      248,
+      304,
+      0
+    ],
+    [
+      0,
+      1000,
+      0,
+      0,
+      0
+    ],
+    [
+      331,
+      0,
+      298,
+      371,
+      0
+    ],
+    [
+      306,
+      0,
+      303,
+      391,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1000
+    ]
+  ],
+  "confusion_rf_remote_fixed_n": [
+    [
+      465,
+      38,
+      353,
+      144,
+      0
+    ],
+    [
+      0,
+      1000,
+      0,
+      0,
+      0
+    ],
+    [
+      287,
+      30,
+      481,
+      202,
+      0
+    ],
+    [
+      55,
+      26,
+      134,
+      785,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      998
+    ]
+  ],
+  "attack": {
+    "variable_n": {
+      "latency": {
+        "Majority": {
+          "acc_mean": 0.2,
+          "acc_std": 0.0,
+          "f1_mean": 0.06666666666666667,
+          "f1_std": 0.0,
+          "within_acc_mean": 0.2,
+          "within_acc_std": 0.0
+        },
+        "RF": {
+          "acc_mean": 0.2938,
+          "acc_std": 0.026969612529660125,
+          "f1_mean": 0.28714273372102606,
+          "f1_std": 0.03457282686090725,
+          "within_acc_mean": 0.2794,
+          "within_acc_std": 0.026477159968546486
+        },
+        "SVM": {
+          "acc_mean": 0.29399999999999993,
+          "acc_std": 0.030351276744150307,
+          "f1_mean": 0.2732675237720552,
+          "f1_std": 0.03812715364835568,
+          "within_acc_mean": 0.3332,
+          "within_acc_std": 0.04164324675142418
+        },
+        "MLP": {
+          "acc_mean": 0.3014,
+          "acc_std": 0.03255518391900129,
+          "f1_mean": 0.2686491657093565,
+          "f1_std": 0.0321002427323472,
+          "within_acc_mean": 0.34480000000000005,
+          "within_acc_std": 0.040006999387607156
+        }
+      },
+      "size": {
+        "Majority": {
+          "acc_mean": 0.2,
+          "acc_std": 0.0,
+          "f1_mean": 0.06666666666666667,
+          "f1_std": 0.0,
+          "within_acc_mean": 0.2,
+          "within_acc_std": 0.0
+        },
+        "RF": {
+          "acc_mean": 0.6073999999999999,
+          "acc_std": 0.00835703296631048,
+          "f1_mean": 0.6070007193135154,
+          "f1_std": 0.008451896544310514,
+          "within_acc_mean": 0.608,
+          "within_acc_std": 0.013841965178398646
+        },
+        "SVM": {
+          "acc_mean": 0.6005999999999999,
+          "acc_std": 0.005238320341483522,
+          "f1_mean": 0.5489506448332679,
+          "f1_std": 0.007410435624844059,
+          "within_acc_mean": 0.5980000000000001,
+          "within_acc_std": 0.0064187226143525115
+        },
+        "MLP": {
+          "acc_mean": 0.6005999999999999,
+          "acc_std": 0.001200000000000001,
+          "f1_mean": 0.5080588756334492,
+          "f1_std": 0.013118945423291286,
+          "within_acc_mean": 0.6028,
+          "within_acc_std": 0.004166533331199931
+        }
+      },
+      "remote (latency+size)": {
+        "Majority": {
+          "acc_mean": 0.2,
+          "acc_std": 0.0,
+          "f1_mean": 0.06666666666666667,
+          "f1_std": 0.0,
+          "within_acc_mean": 0.2,
+          "within_acc_std": 0.0
+        },
+        "RF": {
+          "acc_mean": 0.6274,
+          "acc_std": 0.015564061166674989,
+          "f1_mean": 0.6256618795410465,
+          "f1_std": 0.015489975250749785,
+          "within_acc_mean": 0.648,
+          "within_acc_std": 0.009549869109050665
+        },
+        "SVM": {
+          "acc_mean": 0.6315999999999999,
+          "acc_std": 0.01805103875127414,
+          "f1_mean": 0.6264695800249417,
+          "f1_std": 0.015550545976460023,
+          "within_acc_mean": 0.6558,
+          "within_acc_std": 0.024011663832396123
+        },
+        "MLP": {
+          "acc_mean": 0.6312,
+          "acc_std": 0.021903424389807198,
+          "f1_mean": 0.6182222863833351,
+          "f1_std": 0.031681641452885025,
+          "within_acc_mean": 0.673,
+          "within_acc_std": 0.021382235617446513
+        }
+      },
+      "profiling (all four)": {
+        "Majority": {
+          "acc_mean": 0.2,
+          "acc_std": 0.0,
+          "f1_mean": 0.06666666666666667,
+          "f1_std": 0.0,
+          "within_acc_mean": 0.2,
+          "within_acc_std": 0.0
+        },
+        "RF": {
+          "acc_mean": 0.8242,
+          "acc_std": 0.01377534028617801,
+          "f1_mean": 0.8238212958565407,
+          "f1_std": 0.013716971123970292,
+          "within_acc_mean": 0.8321999999999999,
+          "within_acc_std": 0.0029257477676655794
+        },
+        "SVM": {
+          "acc_mean": 0.8241999999999999,
+          "acc_std": 0.016154256405046905,
+          "f1_mean": 0.8013773258400064,
+          "f1_std": 0.0329984599040013,
+          "within_acc_mean": 0.8422000000000001,
+          "within_acc_std": 0.01794881611694766
+        },
+        "MLP": {
+          "acc_mean": 0.8262,
+          "acc_std": 0.03095415965585238,
+          "f1_mean": 0.8164360925107135,
+          "f1_std": 0.03311050996370692,
+          "within_acc_mean": 0.8493999999999999,
+          "within_acc_std": 0.01737354310438719
+        }
+      }
+    },
+    "fixed_n": {
+      "latency": {
+        "Majority": {
+          "acc_mean": 0.2,
+          "acc_std": 0.0,
+          "f1_mean": 0.06666666666666667,
+          "f1_std": 0.0,
+          "within_acc_mean": 0.2,
+          "within_acc_std": 0.0
+        },
+        "RF": {
+          "acc_mean": 0.5149999999999999,
+          "acc_std": 0.08366600265340755,
+          "f1_mean": 0.5001857455162575,
+          "f1_std": 0.06967130128308165,
+          "within_acc_mean": 0.5444,
+          "within_acc_std": 0.0695056832208705
+        },
+        "SVM": {
+          "acc_mean": 0.4404,
+          "acc_std": 0.1609777624394127,
+          "f1_mean": 0.3891396733270681,
+          "f1_std": 0.16271940654854453,
+          "within_acc_mean": 0.595,
+          "within_acc_std": 0.07407293702831012
+        },
+        "MLP": {
+          "acc_mean": 0.5144,
+          "acc_std": 0.12992089901166784,
+          "f1_mean": 0.46707613315231244,
+          "f1_std": 0.1403740627336863,
+          "within_acc_mean": 0.6155999999999999,
+          "within_acc_std": 0.06880000000000001
+        }
+      },
+      "size": {
+        "Majority": {
+          "acc_mean": 0.2,
+          "acc_std": 0.0,
+          "f1_mean": 0.06666666666666667,
+          "f1_std": 0.0,
+          "within_acc_mean": 0.2,
+          "within_acc_std": 0.0
+        },
+        "RF": {
+          "acc_mean": 0.6016,
+          "acc_std": 0.009830564581955616,
+          "f1_mean": 0.6015811906887223,
+          "f1_std": 0.009854885695175399,
+          "within_acc_mean": 0.5984,
+          "within_acc_std": 0.017373543104387185
+        },
+        "SVM": {
+          "acc_mean": 0.5992,
+          "acc_std": 0.008863407922464142,
+          "f1_mean": 0.5500008081802996,
+          "f1_std": 0.010699735469288922,
+          "within_acc_mean": 0.6055999999999999,
+          "within_acc_std": 0.007499333303701121
+        },
+        "MLP": {
+          "acc_mean": 0.6008,
+          "acc_std": 0.0016000000000000014,
+          "f1_mean": 0.5064530536149638,
+          "f1_std": 0.012906107229927688,
+          "within_acc_mean": 0.6008,
+          "within_acc_std": 0.006734983296193067
+        }
+      },
+      "remote (latency+size)": {
+        "Majority": {
+          "acc_mean": 0.2,
+          "acc_std": 0.0,
+          "f1_mean": 0.06666666666666667,
+          "f1_std": 0.0,
+          "within_acc_mean": 0.2,
+          "within_acc_std": 0.0
+        },
+        "RF": {
+          "acc_mean": 0.7458,
+          "acc_std": 0.04862674161405431,
+          "f1_mean": 0.7301268337406237,
+          "f1_std": 0.0628452447446132,
+          "within_acc_mean": 0.8048,
+          "within_acc_std": 0.05375276737062014
+        },
+        "SVM": {
+          "acc_mean": 0.703,
+          "acc_std": 0.08102345339468076,
+          "f1_mean": 0.679780611564373,
+          "f1_std": 0.10005969513911653,
+          "within_acc_mean": 0.8058,
+          "within_acc_std": 0.06074997942386481
+        },
+        "MLP": {
+          "acc_mean": 0.772,
+          "acc_std": 0.11433809513893432,
+          "f1_mean": 0.7532602884513068,
+          "f1_std": 0.1363757493039282,
+          "within_acc_mean": 0.8248,
+          "within_acc_std": 0.05074012219141772
+        }
+      },
+      "profiling (all four)": {
+        "Majority": {
+          "acc_mean": 0.2,
+          "acc_std": 0.0,
+          "f1_mean": 0.06666666666666667,
+          "f1_std": 0.0,
+          "within_acc_mean": 0.2,
+          "within_acc_std": 0.0
+        },
+        "RF": {
+          "acc_mean": 0.8513999999999999,
+          "acc_std": 0.038588081061384755,
+          "f1_mean": 0.8468312322390907,
+          "f1_std": 0.041602762037195345,
+          "within_acc_mean": 0.867,
+          "within_acc_std": 0.030639843341636098
+        },
+        "SVM": {
+          "acc_mean": 0.8168000000000001,
+          "acc_std": 0.020390193721492658,
+          "f1_mean": 0.7914914191558517,
+          "f1_std": 0.03990293723145106,
+          "within_acc_mean": 0.8508000000000001,
+          "within_acc_std": 0.0434483601531749
+        },
+        "MLP": {
+          "acc_mean": 0.8413999999999999,
+          "acc_std": 0.03143628476776477,
+          "f1_mean": 0.8202507016513652,
+          "f1_std": 0.05043151163437774,
+          "within_acc_mean": 0.8718,
+          "within_acc_std": 0.03626237719731015
+        }
+      }
+    }
+  },
+  "delay_sweep": {
+    "fixed n, latency only": [
+      {
+        "max_delay_ms": 0,
+        "acc_mean": 0.5149999999999999,
+        "acc_std": 0.08366600265340755
+      },
+      {
+        "max_delay_ms": 50,
+        "acc_mean": 0.31460000000000005,
+        "acc_std": 0.03811351466343665
+      },
+      {
+        "max_delay_ms": 100,
+        "acc_mean": 0.26880000000000004,
+        "acc_std": 0.02644541548170495
+      },
+      {
+        "max_delay_ms": 200,
+        "acc_mean": 0.244,
+        "acc_std": 0.021316660151158774
+      },
+      {
+        "max_delay_ms": 400,
+        "acc_mean": 0.20659999999999998,
+        "acc_std": 0.01256343901963153
+      },
+      {
+        "max_delay_ms": 800,
+        "acc_mean": 0.2096,
+        "acc_std": 0.017315888657530695
+      }
+    ],
+    "fixed n, latency+size": [
+      {
+        "max_delay_ms": 0,
+        "acc_mean": 0.7458,
+        "acc_std": 0.04862674161405431
+      },
+      {
+        "max_delay_ms": 50,
+        "acc_mean": 0.6212,
+        "acc_std": 0.004578209256903843
+      },
+      {
+        "max_delay_ms": 100,
+        "acc_mean": 0.6055999999999999,
+        "acc_std": 0.009971960689854337
+      },
+      {
+        "max_delay_ms": 200,
+        "acc_mean": 0.6098,
+        "acc_std": 0.010906878563548794
+      },
+      {
+        "max_delay_ms": 400,
+        "acc_mean": 0.6003999999999999,
+        "acc_std": 0.008890444308357155
+      },
+      {
+        "max_delay_ms": 800,
+        "acc_mean": 0.5965999999999999,
+        "acc_std": 0.008957678270623484
+      }
+    ],
+    "variable n, latency+size": [
+      {
+        "max_delay_ms": 0,
+        "acc_mean": 0.6274,
+        "acc_std": 0.015564061166674989
+      },
+      {
+        "max_delay_ms": 50,
+        "acc_mean": 0.6256,
+        "acc_std": 0.01668052756959445
+      },
+      {
+        "max_delay_ms": 100,
+        "acc_mean": 0.6232,
+        "acc_std": 0.005564171097297428
+      },
+      {
+        "max_delay_ms": 200,
+        "acc_mean": 0.6216,
+        "acc_std": 0.018853116453255166
+      },
+      {
+        "max_delay_ms": 400,
+        "acc_mean": 0.5962,
+        "acc_std": 0.008795453370918417
+      },
+      {
+        "max_delay_ms": 800,
+        "acc_mean": 0.6066,
+        "acc_std": 0.01092886087385141
+      }
+    ],
+    "depth-padded, latency+size": [
+      {
+        "max_delay_ms": 0,
+        "acc_mean": 0.3288,
+        "acc_std": 0.03383134641127958
+      },
+      {
+        "max_delay_ms": 50,
+        "acc_mean": 0.33140000000000003,
+        "acc_std": 0.033481935427928884
+      },
+      {
+        "max_delay_ms": 100,
+        "acc_mean": 0.3156,
+        "acc_std": 0.02281753711512266
+      },
+      {
+        "max_delay_ms": 200,
+        "acc_mean": 0.303,
+        "acc_std": 0.013160547101089692
+      },
+      {
+        "max_delay_ms": 400,
+        "acc_mean": 0.26420000000000005,
+        "acc_std": 0.016203703280423278
+      },
+      {
+        "max_delay_ms": 800,
+        "acc_mean": 0.2252,
+        "acc_std": 0.007467261881037794
+      }
+    ]
+  },
+  "confusion_rf_full_defense": [
+    [
+      600,
+      1,
+      399,
+      0,
+      0
+    ],
+    [
+      571,
+      47,
+      382,
+      0,
+      0
+    ],
+    [
+      600,
+      0,
+      400,
+      0,
+      0
+    ],
+    [
+      600,
+      0,
+      400,
+      0,
+      0
+    ],
+    [
+      600,
+      0,
+      400,
+      0,
+      0
+    ]
+  ],
+  "defenses": {
+    "None": {
+      "rf_acc_mean": 0.6274,
+      "rf_acc_std": 0.015564061166674989,
+      "svm_acc_mean": 0.6315999999999999,
+      "svm_acc_std": 0.01805103875127414,
+      "latency_ms": 125.92026659998083,
+      "latency_overhead_pct": 0.0,
+      "bytes": 234660.1352,
+      "bandwidth_overhead_pct": 0.0,
+      "fixed_n_rf_acc_mean": 0.7458,
+      "fixed_n_rf_acc_std": 0.04862674161405431,
+      "fixed_n_within_rf_acc_mean": 0.8048,
+      "fixed_n_within_rf_acc_std": 0.05375276737062014
+    },
+    "Random delay U[0,200ms]": {
+      "rf_acc_mean": 0.6216,
+      "rf_acc_std": 0.018853116453255166,
+      "svm_acc_mean": 0.6275999999999999,
+      "svm_acc_std": 0.007418894796396569,
+      "latency_ms": 225.3436202413383,
+      "latency_overhead_pct": 78.95738813609898,
+      "bytes": 234660.1352,
+      "bandwidth_overhead_pct": 0.0,
+      "fixed_n_rf_acc_mean": 0.6098,
+      "fixed_n_rf_acc_std": 0.010906878563548794,
+      "fixed_n_within_rf_acc_mean": 0.6017999999999999,
+      "fixed_n_within_rf_acc_std": 0.011496086290559968
+    },
+    "Byte padding": {
+      "rf_acc_mean": 0.2978,
+      "rf_acc_std": 0.026566143867712534,
+      "svm_acc_mean": 0.29399999999999993,
+      "svm_acc_std": 0.030351276744150307,
+      "latency_ms": 125.92026659998083,
+      "latency_overhead_pct": 0.0,
+      "bytes": 284292.0,
+      "bandwidth_overhead_pct": 21.15053106813347,
+      "fixed_n_rf_acc_mean": 0.5085999999999999,
+      "fixed_n_rf_acc_std": 0.09152180068158625,
+      "fixed_n_within_rf_acc_mean": 0.5444,
+      "fixed_n_within_rf_acc_std": 0.0695056832208705
+    },
+    "Depth padding": {
+      "rf_acc_mean": 0.3288,
+      "rf_acc_std": 0.03383134641127958,
+      "svm_acc_mean": 0.3632,
+      "svm_acc_std": 0.03322288367977712,
+      "latency_ms": 170.59829495998565,
+      "latency_overhead_pct": 35.481205342374665,
+      "bytes": 131216.0,
+      "bandwidth_overhead_pct": -44.082534560817045
+    },
+    "Byte padding + constant time": {
+      "rf_acc_mean": 0.21000000000000002,
+      "rf_acc_std": 0.0071554175279993255,
+      "svm_acc_mean": 0.2096,
+      "svm_acc_std": 0.006887670143089024,
+      "latency_ms": 463.10454659869225,
+      "latency_overhead_pct": 267.77602136903573,
+      "bytes": 284292.0,
+      "bandwidth_overhead_pct": 21.15053106813347,
+      "fixed_n_rf_acc_mean": 0.20939999999999998,
+      "fixed_n_rf_acc_std": 0.008845337754998394,
+      "fixed_n_within_rf_acc_mean": 0.2092,
+      "fixed_n_within_rf_acc_std": 0.008975522268926756
+    },
+    "Depth padding + constant time": {
+      "rf_acc_mean": 0.20939999999999998,
+      "rf_acc_std": 0.0019595917942265445,
+      "svm_acc_mean": 0.2088,
+      "svm_acc_std": 0.0018330302779823377,
+      "latency_ms": 500.8695930510571,
+      "latency_overhead_pct": 297.7672590562426,
+      "bytes": 131216.0,
+      "bandwidth_overhead_pct": -44.082534560817045
+    }
+  },
+  "constant_time_deadline_ms": {
+    "undefended": 462.5488459986811,
+    "depth_padded": 500.3881950010693
+  },
+  "latency_vs_length_corr": 0.31951217819921635,
+  "session_median_latency_ms": {
+    "min": 66.05750000016997,
+    "max": 152.33815000101458
+  }
+}

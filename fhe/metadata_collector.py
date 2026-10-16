@@ -59,12 +59,10 @@ class MetadataCollector:
         amplitude = workload_profile.get("amplitude", 1.0)
         variability = workload_profile.get("variability", 1.0)
         sparsity = workload_profile.get("sparsity", 0.0)
-        operation_bias = workload_profile.get("operation_bias", 1.0)
 
         scale_noise = self.rng.normal(0.0, self.baseline_noise_scale)
         system_jitter = self.rng.normal(0.0, self.workload_jitter_scale)
         load_factor = 1.0 + 0.05 * np.log1p(length) + 0.04 * amplitude + 0.03 * variability - 0.02 * sparsity
-        load_factor *= max(0.75, operation_bias)
 
         noisy["time"] = max(
             1e-6,
@@ -87,7 +85,7 @@ class MetadataCollector:
         )
         noisy["depth"] = max(
             1,
-            int(round(float(noisy["depth"]) + self.rng.normal(0.0, 0.7) + operation_bias * 0.1)),
+            int(round(float(noisy["depth"]) + self.rng.normal(0.0, 0.7))),
         )
         noisy["noise"] = max(
             0.5,

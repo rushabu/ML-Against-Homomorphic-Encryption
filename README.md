@@ -90,6 +90,21 @@ The pipeline will:
 4. compute classification metrics
 5. save models, plots, logs, and the dataset
 
+## Paper Experiments (MIDI 2026)
+
+The results reported in the paper come from `experiments/`, not from the dashboard pipeline.
+That code runs a real client/server CKKS deployment and measures every feature; nothing is simulated.
+
+```bash
+python -m experiments.collect_traces --seeds 0 1 2 3 4 --per-class 200
+python -m experiments.run_experiments
+```
+
+- `collect_traces.py`: the server holds only a public context; it records server latency (deserialize, compute, serialize), the response size in bytes, and instrumented counts of homomorphic calls and rescaling levels. Every result is decrypted and checked against a plaintext reference. Workloads run in random interleaved order, five key sessions, with and without depth padding.
+- `run_experiments.py`: leave-one-session-out evaluation of Majority/RF/SVM/MLP attackers on four feature sets, a random-delay sweep, and four server-side countermeasures with their latency and bandwidth overheads. Writes `experiments/results/results.json` and the figures in `experiments/results/figures/`.
+
+The dashboard (`main.py`, `app.py`) remains a teaching demo. Its `size`, `ops`, `depth` and `noise` features are bookkeeping estimates with added jitter, so do not use them as measurements.
+
 ## Outputs
 
 - `data/dataset.csv`
